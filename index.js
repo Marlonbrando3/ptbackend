@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   // console.log("I've recived a data");
 });
 
-app.post("/", async (req, res) => {
+app.post("/", (req, res) => {
   // const testAcces = p24.reqest("GET","/"{delete my project
   //   'host':'`'
   // })
