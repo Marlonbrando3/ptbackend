@@ -10,7 +10,7 @@ app.get("/api/home", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.json({ msg: "I've recived a data" });
+  res.json({ msg: "I've dont have data" });
   // console.log("I've recived a data");
 });
 
