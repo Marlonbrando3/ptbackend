@@ -13,12 +13,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-let merchantId = 27407;
-let sessionId = bcrypt.hash("895043jrifokds", 10);
-let amount = 2500;
-let currency = "PLN";
-let api = "1b647ca2cb4ddb4fafcd7683fc40fba6";
-let crc = "fccb3ef343fe113a";
+// let merchantId = 27407;
+// let sessionId = bcrypt.hash("895043jrifokds", 10);
+// let amount = 2500;
+// let currency = "PLN";
+// let api = "1b647ca2cb4ddb4fafcd7683fc40fba6";
+// let crc = "fccb3ef343fe113a";
 
 app.get("/", (req, res) => {
   res.json({ msg: "I've dont have data" });
