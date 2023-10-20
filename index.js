@@ -13,6 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+let reqBody = "Nothing..";
+
 // let merchantId = 27407;
 // let sessionId = bcrypt.hash("895043jrifokds", 10);
 // let amount = 2500;
@@ -25,7 +27,13 @@ app.get("/", (req, res) => {
   // console.log("I've recived a data");
 });
 
+app.get("/ver", (req, res) => {
+  res.json({ msg: reqBody });
+  // console.log("I've recived a data");
+});
+
 app.post("/", (req, res) => {
+  reqBody = req.body;
   // const testAcces = p24.reqest("GET","/"{delete my project
   //   'host':'`'
   // })
@@ -33,7 +41,7 @@ app.post("/", (req, res) => {
   //   await `{"sessionId":"${sessionId}","merchantId":${merchantId},"amount":${amount},"currency":"${currency}","crc":"${crc}"}`;
   // const data = await hash.update(DatCRC, "utf-8");
   // const genhash = data.digest("hex");
-  res.json({ msg: req.body });
+  // res.json({ msg: req.body });
   // console.log(genhash);
 });
 
