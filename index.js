@@ -27,14 +27,14 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-  // const testAcces = p24.reqest("GET","/"{
+  // const testAcces = p24.reqest("GET","/"{delete my project
   //   'host':'`'
   // })
   // const DatCRC =
   //   await `{"sessionId":"${sessionId}","merchantId":${merchantId},"amount":${amount},"currency":"${currency}","crc":"${crc}"}`;
   // const data = await hash.update(DatCRC, "utf-8");
   // const genhash = data.digest("hex");
-  res.json({ msg: genhash });
+  res.json({ msg: "kolo" });
   // console.log(genhash);
 });
 
