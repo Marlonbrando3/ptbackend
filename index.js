@@ -33,7 +33,7 @@ app.post("/", (req, res) => {
   //   await `{"sessionId":"${sessionId}","merchantId":${merchantId},"amount":${amount},"currency":"${currency}","crc":"${crc}"}`;
   // const data = await hash.update(DatCRC, "utf-8");
   // const genhash = data.digest("hex");
-  res.json({ msg: "kolo" });
+  res.json({ msg: req.body });
   // console.log(genhash);
 });
 
