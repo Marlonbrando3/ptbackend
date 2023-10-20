@@ -9,6 +9,10 @@ app.get("/api/home", (req, res) => {
   res.json({ msg: "Hello !" });
 });
 
+app.get("/", (req, res) => {
+  res.json({ msg: "Hello, backend is working !" });
+});
+
 app.post("/api/home", (req, res) => {
   res.json({ msg: "Hello !" });
 });
