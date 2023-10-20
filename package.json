@@ -9,7 +9,7 @@
   },
   "name": "node",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "description": "",
