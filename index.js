@@ -23,7 +23,6 @@ let crc = "fccb3ef343fe113a";
 app.get("/", (req, res) => {
   res.json({ msg: "I've dont have data" });
   // console.log("I've recived a data");
-  querySign();
 });
 
 app.post("/", async (req, res) => {
