@@ -13,8 +13,9 @@ app.get("/", (req, res) => {
   res.json("Hello, backend is working !");
 });
 
-app.post("/api/home", (req, res) => {
-  res.send({ msg: "Hello !" });
+app.post("/", (req, res) => {
+  res.send({ msg: "I've recived a data!" });
+  console.log("I've recived a data");
 });
 
 app.listen(PORT, () => {
