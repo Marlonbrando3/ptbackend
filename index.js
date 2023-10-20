@@ -43,6 +43,7 @@ app.post("/", (req, res) => {
   // const genhash = data.digest("hex");
   // res.json({ msg: req.body });
   // console.log(genhash);
+  res.json({msg:" Works"})
 });
 
 app.listen(PORT, () => {
